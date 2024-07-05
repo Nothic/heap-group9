@@ -3,7 +3,7 @@ import UserGrid from "@/components/UserGrid";
 
 export default function Home(){
     return (
-        <div>
+        <div className="min-h-screen">
             <Navbar></Navbar>
 
             <UserGrid></UserGrid>
