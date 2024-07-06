@@ -1,5 +1,5 @@
 export default function LoginWrapper() {
-    return(
+    return (
         <div className="min-h-screen flex items-center justify-center">
             <div className="bg-white p-8 rounded shadow-md w-80">
                 <h2 className="text-2xl font-bold mb-6 text-gray-800">Login</h2>
