@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #0d47a1;
+    padding: 10px;
+    color: white;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.calendar-container {
+    padding: 20px;
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+}
+
+.day, .date {
+    padding: 10px;
+    border: 1px solid #333;
+    text-align: center;
+    border-radius: 4px;
+    color: #e0e0e0; /* Light text color */
+}
+
+.day {
+    font-weight: bold;
+    background-color: #333;
+}
+
+.current-date {
+    background-color: #ff9800;
+    color: #000;
+}
+
+.date.has-class {
+    background-color: #6200ea; /* Purple background for selected dates */
+    color: #ffffff; /* White text color */
+}
+
+.nav-buttons {
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.class-schedule {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #2979ff; /* Lighter blue background */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1565c0; /* Darker blue background on hover */
+}
