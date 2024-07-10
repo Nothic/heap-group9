@@ -1,50 +1,62 @@
+import Image from "next/image";
+import Button from "../components/Button";
+
 export default function ProfileWrapper() {
     return (
-        <div className="profile-container bg-amber-600">
-            <header className="profile-header">
-                <div className="profile-title">
+        <div>
+            <div className="min-h-screen flex items-center justify-center">
+                <div className="bg-white p-8 rounded shadow-md w-80">
+                    <h2 className="text-2xl font-bold mb-6 text-gray-800">About Me</h2>
+                    <Image src="/cat.jpg" alt="person" className="h-48 w-full object-cover md:h-full md:w-48 rounded-full" width={320} height={320} />
+
+                    <form>
+                        <div className="mb-4">
+
+                            <label htmlFor="name" className="block text-sm font-medium text-gray-600">
+                                Name
+                            </label>
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                                placeholder="Darren Lee"
+                            />
+                            <label htmlFor="yearofstudy" className="block text-sm font-medium text-gray-600">
+                                Year of Study
+                            </label>
+                            <input
+                                type="text"
+                                id="yearofstudy"
+                                name="yearofstudy"
+                                className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                                placeholder="2"
+                            />
+                            <label htmlFor="major" className="block text-sm font-medium text-gray-600">
+                               Major
+                            </label>
+                            <input
+                                type="text"
+                                id="major"
+                                name="major"
+                                className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                                placeholder="Software Engineering"
+                            />
+                            <label htmlFor="bio" className="block text-sm font-medium text-gray-600">
+                                Bio
+                            </label>
+                            <textarea
+                                rows="4"
+                                id="bio"
+                                name="bio"
+                                className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                                placeholder="I love cycling, coding and reading books!"
+                            />
+                            <Button classname="" name="Update"></Button>
+
+                        </div>
+                    </form>
                 </div>
-            </header>
-            <div className="content-container ">
-                <main className="profile-main ">
-                    <section className="profile-info">
-                        <div className="profile-details">
-                            <p>Name: Darren Cat</p>
-                            <p>Year: Year 1</p>
-                            <p>Major: Software Engineering</p>
-                            <p>Hobbies: Coding, Cycling, Sleeping</p>
-                            <p>Skills: Python, Java, C, SQL, PQL, R, JS, PHP</p>
-                        </div>
-                    </section>
-                </main>
-
-
-                <section className="profile-groups">
-                    <div className="profile-grouping">
-                        <h2>Finding groups for:</h2>
-                        <ol>
-                            <li>SE101 (OS & Networking)</li>
-                            <li>IS111 (Introduction to Programming)</li>
-                        </ol>
-                    </div>
-                    <div className="profile-grouped">
-                        <h2>Grouped!</h2>
-                        <ol>
-                            <li>IS112 (Data Management) (2/3) <a href="#"><sub><u>leave group</u></sub></a></li>
-                            <li>COR114 (...) (5/5) full</li>
-                        </ol>
-                    </div>
-
-
-                    <section className="profile-actions">
-                        <button className="find-groups-button">Find new people</button>
-                        <button className="schedule-button"><a href="/dashboard">Schedule</a></button>
-                        <div className="profile-contacts">
-                            <p>Email: abc.2023@scis.smu.edu.sg</p>
-                            <p>Telegram: @ABcabc</p>
-                        </div>
-                    </section>
-                </section>
 
             </div>
         </div>
