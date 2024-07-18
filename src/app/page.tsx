@@ -1,3 +1,4 @@
+import ClassGrid from "@/components/ClassGrid";
 import Navbar from "@/components/Navbar";
 import UserGrid from "@/components/UserGrid";
 
@@ -6,7 +7,7 @@ export default function Home(){
         <div className="min-h-screen">
             <Navbar></Navbar>
 
-            <UserGrid></UserGrid>
+            <ClassGrid></ClassGrid>
         </div>
     )
 }

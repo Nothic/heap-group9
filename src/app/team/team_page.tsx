@@ -1,11 +1,11 @@
 import Navbar from "@/components/Navbar";
-import ClassGrid from "@/components/ClassGrid";
+import UserGrid from "@/components/UserGrid";
 
 export default function Page(){
     return(
         <div>
             <Navbar></Navbar>
-            <div>Class Calendar Here</div>
+            <UserGrid></UserGrid>
         </div>
     )
 }
